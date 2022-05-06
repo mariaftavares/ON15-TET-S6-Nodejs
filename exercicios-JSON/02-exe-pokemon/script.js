@@ -39,16 +39,12 @@ const data = [
 // 14h13
 
 
-for(let i=0; i < data.length; i++){
-    let pokemon = data[i]
-    console.log(pokemon.name)
-    console.log(pokemon.description)
-    // console.log(pokemon.types)
-
-    let tipos = pokemon.types
-
-    for(let j=0; j< tipos.length; j++){
-        console.log(tipos[j])
-    }
-}
-
+for (let item of data){
+    console.log("Nome:",item.name)
+    console.log("Descrição:",item.description)
+   for(let posicao of item.types){
+    console.log("Tipo:",posicao)
+   }
+    console.log("--------------")
+  
+  }

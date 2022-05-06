@@ -5732,3 +5732,16 @@ const estados = [
         ]
       }
     ]
+
+    function encontrarEstado(entrada){
+      for(let i = 0; i<estados.length;i++){
+        if ((estados[i].sigla).toLowerCase().includes(entrada.toLowerCase())){
+          console.log("Lista das cidades do estado",estados[i].nome,":")
+          for(let d = 0;d<(estados[i].cidades).length;d++){
+            console.log(estados[i].cidades[d])
+          }
+        }
+      }
+    }
+
+    encontrarEstado("Mg");
